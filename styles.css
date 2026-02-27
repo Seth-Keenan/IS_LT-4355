@@ -1,0 +1,23 @@
+/* Name: Seth Keenan
+   Course: IS_LT-4355
+   Description: Styles for about page */
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #F97316;
+    font-size: 42px;
+    font-family: "Noto Sans", Arial, sans-serif;
+}
+
+p {
+    color: #1F2937;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: Inter, Arial, sans-serif;
+}

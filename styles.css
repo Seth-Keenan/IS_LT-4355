@@ -21,3 +21,92 @@ p {
     line-height: 1.6;
     font-family: Inter, Arial, sans-serif;
 }
+
+/* One H1 for SEO :) */
+.site-title {
+  color: #F97316;
+  font-size: 28px;
+  font-family: "Noto Sans", Arial, sans-serif;
+  margin: 0;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 42px;
+    color: #f97316;
+    margin-bottom: 25px;
+}
+
+
+.hero-card {
+    background-color: rgba(244, 178, 107, 0.95);
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
+}
+
+
+/* text */
+.hero-card p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.hero-card blockquote {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background-color: #f97316;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.hero-btn:hover {
+    background-color: #ea580c;
+    transform: translateY(-2px);
+}
+
+/* Placeholder for assignment when we edit the other stuff on home */
+.home-content{
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}

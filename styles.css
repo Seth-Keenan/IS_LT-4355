@@ -128,3 +128,19 @@ p {
   background-color: #F97316;
   color: white;
 }
+
+.about-list {
+  margin: 20px auto;
+  padding-left: 40px;
+}
+
+.about-list li {
+  font-size: 18px;
+  color: #d66d22;
+  margin-bottom: 10px;
+}
+
+.about-list li:hover {
+  color: #f07721;
+  text-decoration: underline;
+}

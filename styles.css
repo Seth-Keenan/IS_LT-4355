@@ -144,3 +144,27 @@ p {
   color: #f07721;
   text-decoration: underline;
 }
+.reflection-title{
+    color:#f97316;
+    font-size:48px;
+    margin:40px auto 10px auto;
+    max-width:1000px;
+}
+
+.reflection-box{
+    max-width:900px;
+    margin:30px auto;   
+    padding:45px 60px;
+    background-color:#edb06d;
+    border-radius:35px;
+    box-shadow:0 6px 12px rgba(0,0,0,0.18);
+    text-align:center;
+}
+
+
+.reflection-box p{
+    font-size:20px;
+    line-height:1.7;
+    margin-bottom:20px;
+    color:#1f2937;
+}

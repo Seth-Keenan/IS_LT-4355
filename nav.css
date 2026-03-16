@@ -5,14 +5,14 @@
 */
 
 :root {
-    --nav-bg:           #ffffff;
-    --nav-accent:       #f97316;
-    --nav-accent-dk:    #ea580c;
-    --nav-text:         #1f2937;
+    --nav-bg: #ffffff;
+    --nav-accent: #f97316;
+    --nav-accent-dk: #ea580c;
+    --nav-text: #1f2937;
     --nav-font-heading: "Noto Sans", Arial, sans-serif;
-    --nav-font-body:    Inter, Arial, sans-serif;
-    --nav-height:       68px;
-    --logo-height:      44px;
+    --nav-font-body: Inter, Arial, sans-serif;
+    --nav-height: 76px;
+    --logo-height: 44px;
 }
 
 * {
@@ -23,13 +23,15 @@
 
 header {
     background-color: var(--nav-bg);
-    height: var(--nav-height);
+    min-height: var(--nav-height);
     padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #f97316;
+    border-bottom: 2px solid var(--nav-accent);
     box-shadow: 0 2px 8px rgba(249, 115, 22, 0.1);
+    position: relative;
+    z-index: 100;
 }
 
 header img {
@@ -45,7 +47,12 @@ nav ul {
     gap: 0.25rem;
 }
 
+nav ul li {
+    position: relative;
+}
+
 nav ul li a {
+    display: block;
     font-family: var(--nav-font-body);
     font-size: 0.95rem;
     font-weight: bold;
@@ -55,6 +62,7 @@ nav ul li a {
     padding: 0.45rem 1rem;
     border-radius: 8px;
     border: 2px solid transparent;
+    transition: all 0.2s ease;
 }
 
 nav ul li a:hover,
@@ -72,8 +80,53 @@ nav ul li a.active {
     border-color: var(--nav-accent);
 }
 
-nav ul li a.active:hover {
+nav ul li a.active:hover,
+nav ul li a.active:focus {
     background-color: var(--nav-accent-dk);
     border-color: var(--nav-accent-dk);
     color: #ffffff;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 190px;
+    padding: 0.35rem 0;
+    background-color: #ffffff;
+    border: 2px solid var(--nav-accent);
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: block;
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 0;
+    background-color: #ffffff;
+    color: var(--nav-text);
+    transform: none;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus {
+    background-color: #fff7ed;
+    color: var(--nav-accent);
+    border: none;
+    transform: none;
+}
+
+/* Show dropdown */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
 }

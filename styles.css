@@ -311,3 +311,84 @@ footer {
 .footer-contact-item a:hover {
     text-decoration: underline;
 }
+
+@media print {
+    @page {
+        margin: 1in;
+    }
+
+    body {
+        font-family: Georgia, "Times New Roman", serif;
+        color: black;
+        background: white;
+        font-size: 12pt;
+    }
+
+    header,
+    nav,
+    .profile-img,
+    .about-card,
+    .about-video,
+    .resume-link,
+    .footer-icon {
+        display: none !important;
+    }
+
+    h1, h2, h3, p, li, a, span {
+        color: black !important;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+
+    h1 { 
+        font-size: 18pt; margin-bottom: 0.3rem; 
+    }
+    h2 { 
+        font-size: 14pt; margin-bottom: 0.3rem; 
+    }
+    h3 { 
+        font-size: 12pt; 
+        margin-bottom: 0.3rem; 
+    }
+
+    p { 
+        margin: 0.3rem 0; line-height: 1.5; 
+    }
+
+    ul {
+        margin: 0.3rem 0 0.3rem 1.5rem;
+        padding: 0;
+    }
+
+    li { 
+        margin-bottom: 0.2rem; 
+    }
+
+    footer {
+        display: block;
+        margin-top: 1rem;
+        font-size: 10pt;
+        border-top: 1pt solid black;
+        padding-top: 0.5rem;
+        text-align: center;
+    }
+
+    .footer-contact { 
+        display: flex; 
+        gap: 1.5rem; 
+        justify-content: center; 
+    }
+
+    .footer-contact-item { 
+        display: inline-flex; 
+        gap: 0.3rem; 
+    }
+
+    .footer-contact-item a {
+        color: black !important;
+        text-decoration: none;
+    }
+
+    h1, h2, h3, p, ul {
+        page-break-inside: avoid;
+    }
+}

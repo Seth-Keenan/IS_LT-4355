@@ -7,6 +7,13 @@ body {
     background-color: #FFFFFF;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 h1 {
@@ -497,11 +504,17 @@ footer {
     transform: translateY(-2px);
 }
  
+/* TODO: Fix the phone view */
 @media (max-width: 480px) {
+    .contact-main {
+        margin: 30px auto;
+        padding: 0 16px 20px;
+    }
+    
     .contact-title {
         font-size: 36px;
     }
- 
+
     .form-actions {
         flex-direction: column;
     }

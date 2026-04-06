@@ -22,6 +22,7 @@
 }
 
 header {
+    width: 100%;
     background-color: var(--nav-bg);
     min-height: var(--nav-height);
     padding: 0 2rem;

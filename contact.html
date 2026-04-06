@@ -1,0 +1,114 @@
+<!--
+  Name: Seth Keenan
+  Date: April 5, 2026
+  Course: IS_LT-4355
+  Description: Contact page with form
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.svg" alt="Seth Keenan Site Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+
+            <li class="dropdown">
+                <a href="#">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Class Projects</a></li>
+                    <li><a href="#">Work Experience</a></li>
+                </ul>
+            </li>
+
+            <li><a href="reflection.html">Reflection</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contact-main">
+
+    <h1 class="contact-title">Contact Me</h1>
+
+    <!-- GET here works but POST will make a 405 -->
+    <form class="contact-form" action="#" method="get">
+
+        <div class="form-group">
+            <label for="title">Title</label>
+            <select id="title" name="title" required>
+                <option value="" disabled selected>Select a title</option>
+                <option value="mr">Mr.</option>
+                <option value="ms">Ms.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="dr">Dr.</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Full name"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email address"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Type here"
+                required></textarea>
+        </div>
+
+        <div class="form-actions">
+            <button type="reset" class="btn-clear">Clear Form</button>
+            <button type="submit" class="btn-submit">Send Message</button>
+        </div>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>Seth Keenan &mdash; 2026</p>
+    <div class="footer-contact">
+        <span class="footer-contact-item">
+            <img src="images/phone.png" alt="Phone" class="footer-icon">
+            <a href="tel:+16362196206">(636) 219-6206</a>
+        </span>
+        <span class="footer-contact-item">
+            <img src="images/email.png" alt="Email" class="footer-icon">
+            <a href="mailto:sethkeenan6@gmail.com">sethkeenan6@gmail.com</a>
+        </span>
+    </div>
+</footer>
+
+</body>
+</html>

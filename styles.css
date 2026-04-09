@@ -199,6 +199,10 @@ p {
     max-width: 1350px;
     margin: 50px auto;
     padding: 0 40px 60px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .about-main h1 {
@@ -209,12 +213,11 @@ p {
 }
 
 .about-intro {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: center;
     gap: 90px;
-    margin: 30px 0 50px;
-    flex-wrap: wrap;
+    margin: 10px 0 30px;
 }
 
 .about-main .profile-img {
@@ -279,6 +282,59 @@ p {
     margin-top: 10px;
     font-size: 16px;
     color: #374151;
+}
+
+.about-resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-skills {
+    text-align: center;
+}
+
+.about-skills .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-skills .about-list li::before {
+    content: "• ";
+    color: #F97316;
+}
+
+.about-lower {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Trying to fix phone view */
+@media (max-width: 768px) {
+    .about-main {
+        padding: 0 20px 40px;
+        margin: 30px auto;
+    }
+
+    .about-intro {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .about-lower {
+        grid-template-columns: 1fr;
+    }
+
+    .about-main h1 {
+        font-size: 48px;
+    }
 }
 
 footer {

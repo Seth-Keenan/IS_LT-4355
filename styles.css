@@ -337,6 +337,13 @@ p {
     }
 }
 
+.about-page header,
+.about-page nav,
+.about-page nav * {
+    animation: none !important;
+    transition: none !important;
+}
+
 footer {
     text-align: center;
     padding: 20px;

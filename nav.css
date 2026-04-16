@@ -126,8 +126,32 @@ nav ul li a.active:focus {
     transform: none;
 }
 
-/* Show dropdown */
 .dropdown:hover .dropdown-menu,
 .dropdown:focus-within .dropdown-menu {
     display: block;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: var(--nav-accent);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: none !important;
+    }
+
+    nav.nav-open {
+        display: block;
+    }
 }

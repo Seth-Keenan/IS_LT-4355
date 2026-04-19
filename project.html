@@ -1,0 +1,168 @@
+<!--
+  Name: Seth Keenan
+  Date: February 5, 2026
+  Course: IS_LT-4355
+  Description: HTML Projects Page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects | Seth Keenan</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="nav.css">
+    </head>
+    <body>
+
+        <header>
+            <img src="images/logo.svg" alt="Seth Keenan Site Logo">
+
+            <span class="hamburger" aria-label="Menu" onclick="document.querySelector('nav').classList.toggle('nav-open')">&#9776;</span>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+
+                    <li class="dropdown">
+                        <a href="project.html" class="active">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="project.html#fluentures">Fluentures</a></li>
+                            <li><a href="project.html#functional-fitness">Functional Fitness Chiro</a></li>
+                            <li><a href="project.html#data-spot">Data Spot</a></li>
+                            <li><a href="project.html#tiger-space">Tiger Space Program</a></li>
+                            <li><a href="project.html#icrop-map">iCrop Map</a></li>
+                            <li><a href="project.html#icare">iCare Health System</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="projects-header">
+                <h1>Projects</h1>
+                <p>A collection of my work so far.</p>
+            </section>
+
+            <section class="projects-grid">
+
+                <article class="project-card" id="fluentures">
+                    <img class="card-image" src="images/fluentures.png" alt="Fluentures app screenshot"/>
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h2 class="card-title">Fluentures</h2>
+                        </div>
+                        <p class="card-description">A generative language learning platform powered by Gemini Flash that creates personalized interactive study guides, quizzes, and sentence building exercises.</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Gemini API</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">Supabase</span>
+                    </div>
+                </article>
+
+                <article class="project-card" id="functional-fitness">
+                    <img class="card-image" src="images/ffc.png" alt="Functional Fitness Chiropractic website screenshot"/>
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h2 class="card-title">Functional Fitness Chiropractic</h2>
+                        </div>
+                        <p class="card-description">A freelance webpage designed and built for a local chiropractic business in Columbia, Missouri — featuring appointment scheduling and service pricing.</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">JetHost</span>
+                        <span class="tag">Tailwind</span>
+                    </div>
+                </article>
+
+                <article class="project-card" id="data-spot">
+                    <img class="card-image" src="images/dataspot.jpg" alt="Data Spot dashboard screenshot"/>
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h2 class="card-title">Data Spot</h2>
+                        </div>
+                        <p class="card-description">A data dashboard for Spotify users providing a year-round Wrapped experience. Note: Spotify API access is restricted, so live functionality requires authorization.</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Vercel</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">Spotify API</span>
+                    </div>
+                </article>
+
+                
+                <article class="project-card" id="tiger-space">
+                    <img class="card-image" src="images/tigerinspace.jpg" alt="Tiger Space Program game screenshot" />
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h2 class="card-title">Tiger Space Program</h2>
+                        </div>
+                        <p class="card-description">A C++ top-down game built with raylib where you play as Mizzou's tiger mascot and must launch yourself into space to save the day. Built for Tigerhacks 2025.</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">raylib</span>
+                    </div>
+                </article>
+
+                
+                <article class="project-card" id="icrop-map">
+                    <img class="card-image" src="images/cropmap.png" alt="iCrop Map heat map screenshot" />
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h2 class="card-title">iCrop Map</h2>
+                        </div>
+                        <p class="card-description">A heat map visualization tool showing crop data across the United States using the USDA API. Built at Tigerhacks 2024.</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Leaflet.js</span>
+                        <span class="tag">USDA API</span>
+                    </div>
+                </article>
+
+                <article class="project-card" id="icare">
+                    <img class="card-image" src="images/icare.png" alt="iCare Health Management System screenshot" />
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h2 class="card-title">iCare Health Management System</h2>
+                        </div>
+                        <p class="card-description">A shippable health management system designed to help health professionals manage patients and documents, built with a full MVC architecture.</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">ASP.NET</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">MVC</span>
+                    </div>
+                </article>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Seth Keenan 2026</p>
+            <div class="footer-contact">
+                <span class="footer-contact-item">
+                    <img src="images/phone.png" alt="Phone" class="footer-icon">
+                    <a href="tel:+16362196206">(636) 219-6206</a>
+                </span>
+                <span class="footer-contact-item">
+                    <img src="images/email.png" alt="Phone" class="footer-icon">
+                    <a href="mailto:sethkeenan6@gmail.com">sethkeenan6@gmail.com</a>
+                </span>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -69,7 +69,6 @@ p {
     margin-bottom: 25px;
 }
 
-
 .hero-card {
     background-color: rgba(244, 178, 107, 0.95);
     max-width: 700px;
@@ -79,19 +78,16 @@ p {
     box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
 }
 
-
 /* text */
 .hero-card p {
     font-size: 18px;
     line-height: 1.6;
 }
 
-
 .hero-card blockquote {
     margin-top: 20px;
     font-style: italic;
 }
-
 
 .hero-btn {
     display: inline-block;
@@ -104,7 +100,6 @@ p {
     font-weight: bold;
     transition: 0.3s;
 }
-
 
 .hero-btn:hover {
     background-color: #ea580c;
@@ -120,13 +115,13 @@ p {
 
 .resume-link {
   display: inline-block;
-  padding: 12px 24px;           
-  margin-top: 20px;             
-  border: 2px solid #F97316;    
-  background-color: #FFF7ED;    
+  padding: 12px 24px;
+  margin-top: 20px;
+  border: 2px solid #F97316;
+  background-color: #FFF7ED;
   color: #F97316;
   text-decoration: none;
-  border-radius: 10px;          
+  border-radius: 10px;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -199,7 +194,6 @@ p {
     max-width: 1350px;
     margin: 50px auto;
     padding: 0 40px 60px;
-
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -294,17 +288,69 @@ p {
     text-align: center;
 }
 
-.about-skills .about-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    list-style: none;
-    padding-left: 0;
+/* Skills table */
+.skills-figure {
+    margin: 20px 0;
 }
 
-.about-skills .about-list li::before {
-    content: "• ";
+.skills-figure figcaption {
+    font-size: 15px;
+    color: #6B7280;
+    margin-bottom: 12px;
+}
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #F97316;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+.skills-table caption {
+    caption-side: top;
+    font-size: 18px;
+    font-weight: 700;
     color: #F97316;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.skills-table th,
+.skills-table td {
+    padding: 14px 20px;
+    border: 1px solid #E5E7EB;
+}
+
+.skills-table thead tr {
+    background-color: #F97316;
+    color: white;
+}
+
+.skills-table tbody tr:nth-child(odd) {
+    background-color: #FFF7ED;
+}
+
+.skills-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.skills-table tbody tr:hover {
+    background-color: #FFEDD5;
+}
+
+.skills-table tfoot td {
+    background-color: #FFF7ED;
+    color: #6B7280;
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+    border-top: 2px solid #F97316;
 }
 
 .about-lower {
@@ -334,6 +380,16 @@ p {
 
     .about-main h1 {
         font-size: 48px;
+    }
+
+    .skills-table th,
+    .skills-table td {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .skills-table caption {
+        font-size: 15px;
     }
 }
 

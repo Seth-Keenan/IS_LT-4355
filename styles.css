@@ -151,12 +151,14 @@ p {
     font-size:48px;
     margin:40px auto 10px auto;
     max-width:1000px;
+    padding: 0 20px;
 }
 
 .reflection-subtitle{
     font-size:28px;
     margin:40px auto 10px auto;
     max-width:1000px;
+    padding: 0 20px;
 }
 
 .reflection-box{
@@ -174,6 +176,29 @@ p {
     line-height:1.7;
     margin-bottom:20px;
     color:#1f2937;
+}
+
+@media (max-width: 768px) {
+    .reflection-title {
+        font-size: 32px;
+        margin: 24px auto 6px auto;
+    }
+
+    .reflection-subtitle {
+        font-size: 18px;
+        margin: 16px auto 8px auto;
+    }
+
+    .reflection-box {
+        margin: 20px 16px;
+        padding: 28px 24px;
+        border-radius: 20px;
+    }
+
+    .reflection-box p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
 }
 
 .profile-img {

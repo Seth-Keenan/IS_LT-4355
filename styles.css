@@ -20,6 +20,8 @@ h1 {
     color: #F97316;
     font-size: 42px;
     font-family: "Noto Sans", Arial, sans-serif;
+    text-shadow: 1px 2px 6px rgba(249, 115, 22, 0.25);
+    letter-spacing: 0.03em;
 }
 
 p {
@@ -229,6 +231,8 @@ p {
     font-size: 84px;
     font-family: "Noto Sans", Arial, sans-serif;
     margin-bottom: 30px;
+    text-shadow: 1px 2px 6px rgba(249, 115, 22, 0.25);
+    letter-spacing: 0.03em;
 }
 
 .about-intro {
@@ -273,6 +277,8 @@ p {
     font-family: "Noto Sans", Arial, sans-serif;
     margin-top: 30px;
     margin-bottom: 12px;
+    text-shadow: 1px 2px 6px rgba(249, 115, 22, 0.25);
+    letter-spacing: 0.03em;
 }
 
 .about-main .about-list {

@@ -452,11 +452,22 @@ footer {
     width: 16px;
     height: 16px;
     vertical-align: middle;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-contact-item:hover .footer-icon {
+    transform: scale(1.35);
+    filter: drop-shadow(0 0 4px rgba(59, 130, 246, 0.7));
 }
 
 .footer-contact-item a {
     color: black;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact-item:hover a {
+    color: #3b82f6;
 }
 
 .footer-contact-item a:hover {
